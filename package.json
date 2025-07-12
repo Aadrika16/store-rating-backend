@@ -5,11 +5,14 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node node.js"
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "engines": {
+  "node": "18.x"
+},
   "type": "commonjs",
   "dependencies": {
     "bcrypt": "^5.1.1",
