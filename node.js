@@ -14,6 +14,10 @@ app.use(cors({
   origin: 'https://store-rating-fullstack-app.netlify.app',
   credentials: true,
 }));
+app.options('*', cors({
+  origin: 'https://store-rating-fullstack-app.netlify.app',
+  credentials: true,
+}));
 app.use(express.json());
 
 let db = null;
