@@ -10,12 +10,7 @@ const sqlite3 = require("sqlite3");
 
 const dbPath = path.join(__dirname, "storedatadb.db");
 
-app.use(cors({
-  origin: 'http://localhost:3001',
-  methods: ['GET', 'POST', 'PUT', 'DELETE'],
-  allowedHeaders: ['Content-Type', 'Authorization'],
-  credentials: true,
-}));
+app.use(cors());
 app.use(express.json());
 
 let db = null;
