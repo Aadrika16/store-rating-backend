@@ -10,7 +10,10 @@ const sqlite3 = require("sqlite3");
 
 const dbPath = path.join(__dirname, "storedatadb.db");
 
-app.use(cors());
+app.use(cors({
+  origin: 'https://store-rating-fullstack-app.netlify.app',
+  credentials: true,
+}));
 app.use(express.json());
 
 let db = null;
